@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+html {
+    background-color: #191d28;
+}
+
+h5 {
+    color: #2e3241;
+}
+
+/* Navbar styles */
+.navbar-cust {
+    background-color: #191d28;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-logo {
+    float: left;
+    width: 40%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #6ccacb;
+}
+
+.site-name {
+    font-size: 4rem;
+    padding: 10px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.navbar-middle {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.navbar-button {
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 12px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 16px;
+    background: #2e3241;
+    padding: 10px 20px 10px 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-button:hover {
+    background: #545b62;
+    text-decoration: none;
+}
+
+.navbar-button-contact {
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 12px;
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1rem;
+    background: #3dc6c1;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-end {
+    float: right;
+    padding: 15px;
+}
+
+.theme-toggle-align {
+    padding-left: 130px;
+}
+
+.navbar-progress {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #6ccacb;
+}
+
+.navbar-toggle {
+    display: inline-block;
+    background-color: #6ccacb;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* theme toggle button style */
+
+.custom-control.teleport-switch {
+    --color: #4cd964;
+    padding-left: 0;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-input {
+    display: none;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-input:checked~.teleport-switch-control-indicator {
+    border-color: var(--color);
+}
+
+.custom-control.teleport-switch .teleport-switch-control-input:checked~.teleport-switch-control-indicator::after {
+    left: -14px;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-input:checked~.teleport-switch-control-indicator::before {
+    right: 2px;
+    background-color: var(--color);
+}
+
+.custom-control.teleport-switch .teleport-switch-control-input:disabled~.teleport-switch-control-indicator {
+    opacity: .4;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-indicator {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    top: 4px;
+    width: 32px;
+    height: 20px;
+    background: #fff;
+    border-radius: 16px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    border: 2px solid #ccc;
+    overflow: hidden;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-indicator::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    top: 2px;
+    left: 2px;
+    background: #ccc;
+}
+
+.custom-control.teleport-switch .teleport-switch-control-indicator::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    top: 2px;
+    right: -14px;
+    background: #ccc;
+}
+
+/* Table styles */
+
+.table-alter {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1em;
+    margin: 0;
+    color: #212529;
+    padding-bottom: 20px;
+}
+
+table {
+    display: table;
+    border-color: gray;
+    background-color: #191d28;
+}
+
+.text-center {
+    text-align: center !important;
+    font-size: 1.6rem;
+}
+
+thead tr th {
+    padding: 8px;
+    text-align: left;
+    color: #818389;
+    background-color: #191d28;
+}
+
+tr td {
+    padding: 8px;
+    text-align: left;
+    color: #ffffff;
+}
+
+tbody tr {
+    background-color: #2e3241;
+}
+
+.negative {
+    color: red;
+}
+
+.positive {
+    color: green;
+}
+
+.details-container {
+    padding: 30px;
+    background-color: #191d28;
+}
+
+.small-header {
+    padding: 10px 0px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.center-div {
+    font-size: 1.6em;
+}
+
+.small-header-percentage {
+    color: green;
+}
+
+.small-header-time {
+    color: #65686f;
+    font-size: 1.3rem;
+}
+
+.center-block {
+    max-width: 40%;
+}
+
+.center-text {
+    color: #65686f;
+    font-size: 1.6rem;
+}
+
+.amount {
+    padding: 10px;
+    color: #ffffff;
+    font-size: 4rem;
+
+}
