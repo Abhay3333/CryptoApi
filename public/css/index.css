@@ -20,8 +20,8 @@ h5 {
     float: left;
     width: 40%;
     padding: 15px;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 10px;
+    font-weight: normal;
     text-decoration: none;
     color: #6ccacb;
 }
@@ -38,39 +38,22 @@ h5 {
     text-align: center;
 }
 
-.navbar-button {
-    -webkit-border-radius: 12;
-    -moz-border-radius: 12;
-    border-radius: 12px;
+.navbar-button,
+.navbar-button-contact {
     font-family: 'Roboto Mono', monospace;
     display: inline-block;
     color: #ffffff;
     font-size: 16px;
-    background: #2e3241;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
     margin-right: 20px;
     text-decoration: none;
     cursor: pointer;
 }
 
-.navbar-button:hover {
-    background: #545b62;
-    text-decoration: none;
-}
-
 .navbar-button-contact {
-    -webkit-border-radius: 12;
-    -moz-border-radius: 12;
-    border-radius: 12px;
-    font-family: 'Roboto Mono', monospace;
-    display: inline-block;
-    color: #ffffff;
     font-size: 1rem;
-    background: #3dc6c1;
-    padding: 10px;
     margin-right: 10px;
-    text-decoration: none;
-    cursor: pointer;
+    background: #3dc6c1;
 }
 
 .navbar-end {
@@ -101,7 +84,6 @@ h5 {
 }
 
 /* theme toggle button style */
-
 .custom-control.teleport-switch {
     --color: #4cd964;
     padding-left: 0;
@@ -144,21 +126,7 @@ h5 {
     overflow: hidden;
 }
 
-.custom-control.teleport-switch .teleport-switch-control-indicator::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s;
-    top: 2px;
-    left: 2px;
-    background: #ccc;
-}
-
+.custom-control.teleport-switch .teleport-switch-control-indicator::after,
 .custom-control.teleport-switch .teleport-switch-control-indicator::before {
     content: '';
     display: block;
@@ -170,12 +138,18 @@ h5 {
     -o-transition: .3s;
     transition: .3s;
     top: 2px;
-    right: -14px;
     background: #ccc;
 }
 
-/* Table styles */
+.custom-control.teleport-switch .teleport-switch-control-indicator::after {
+    left: 2px;
+}
 
+.custom-control.teleport-switch .teleport-switch-control-indicator::before {
+    right: -14px;
+}
+
+/* Table styles */
 .table-alter {
     width: 100%;
     max-width: 100%;
@@ -261,5 +235,40 @@ tbody tr {
     padding: 10px;
     color: #ffffff;
     font-size: 4rem;
+}
 
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .navbar-logo {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .navbar-middle {
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .navbar-button,
+    .navbar-button-contact {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-end {
+        float: none;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .theme-toggle-align {
+        padding-left: 0;
+    }
+
+    .center-block {
+        max-width: 100%;
+    }
 }
